@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Паршуков](https://up.htmlacademy.ru/adaptive/21/user/1214175).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/id7956).
 
 ---
 
