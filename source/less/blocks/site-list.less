@@ -1,0 +1,30 @@
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.site-list__item {
+  background-color: @dark-blue;
+  height: 63px;
+  padding-top: 15px;
+  margin-top: 1px;
+  text-align: center;
+  box-shadow: 0 1px 0 @black, inset 0 1px 0 @fade-white;
+  box-sizing: border-box;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
