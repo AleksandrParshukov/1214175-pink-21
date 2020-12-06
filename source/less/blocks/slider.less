@@ -1,0 +1,36 @@
+.slider__toggles {
+  padding: 0;
+  margin: 7px 0 0;
+}
+
+.slider__toggle {
+  background-color: @dark-blue;
+  opacity: 30%;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0 14px 0 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 100%;
+  }
+
+  &:active {
+    opacity: 10%;
+  }
+
+  &--current {
+    background-color: @white;
+    opacity: 100%;
+    border: 3px solid @dark-blue;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

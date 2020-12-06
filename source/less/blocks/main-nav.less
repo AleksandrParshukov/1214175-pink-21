@@ -1,0 +1,39 @@
+.main-nav {
+  color: @white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.main-nav__logo {
+  height: 69px;
+  background-color: @dark-blue;
+  box-shadow: 0 1px 0 @black;
+  padding-top: 23px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:focus path,
+  &:hover path {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @fade-white;
+  }
+}
+
+.main-nav__logo-image {
+  width: 74px;
+  height: 23px;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

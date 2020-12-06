@@ -1,0 +1,95 @@
+.products {
+  color: @dark-blue;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  empty-cells: hide;
+  border-spacing: 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 2px;
+  margin-left: 20px;
+  transform: translateX((@cell-width + 2) * -1);
+}
+
+.products__offer {
+  position: relative;
+  vertical-align: middle;
+  color: @white;
+  min-width: @cell-width;
+  height: 94px;
+  background-color: @dark-blue;
+  border-right: 2px solid @dark-white;
+  border-top: 2px solid @dark-blue;
+  border-bottom: 2px solid @dark-blue;
+
+  &:first-child {
+    border-left: 2px solid @dark-blue;
+    z-index: 1;
+  }
+
+  &:last-child {
+    border-right: 2px solid @dark-blue;
+  }
+
+  &--bestseller::before {
+    content: "Хит";
+    position: absolute;
+    font-weight: normal;
+    top: 10px;
+    left: -25px;
+    font-size: 14px;
+    line-height: 23px;
+    width: 105px;
+    height: 23px;
+    background-color: @pink;
+    transform: rotate(-45deg);
+  }
+}
+
+.products__offer-name {
+  font-weight: bold;
+  margin: -15px 0 0;
+}
+
+.products__offer-price {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+.products__feature {
+  position: relative;
+  font-size: 14px;
+  line-height: 30px;
+  height: 59px;
+  background-color: @white;
+  border: 2px solid @darken-white;
+
+  &--name {
+    display: none;
+  }
+
+  &--status {
+    text-align: end;
+    padding-right: 17px;
+  }
+
+  &--filter::before {
+    content: "Розовый фильтр";
+    position: absolute;
+    left: 20px;
+  }
+
+  &--smile::before {
+    content: "Смайлики";
+    position: absolute;
+    left: 20px;
+  }
+
+  &--comments::before {
+    content: "Комментарии";
+    position: absolute;
+    left: 20px;
+  }
+}
