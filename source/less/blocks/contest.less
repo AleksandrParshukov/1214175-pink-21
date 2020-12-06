@@ -1,0 +1,99 @@
+.contest {
+  color: @dark-blue;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contest__description {
+  text-align: center;
+  padding: 0 20px;
+  margin: 54px 0;
+}
+
+.contest__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.contest__legend {
+  color: @pink;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.contest__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contest__label {
+  &--text {
+    color: @pink;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 23px;
+  }
+}
+
+.contest__input {
+  &--text {
+    color: inherit;
+    font-size: 18px;
+    border: 2px solid @darken-white;
+    border-radius: 4px;
+    width: 276px;
+    height: 59px;
+    box-sizing: border-box;
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-bottom: 29px;
+
+    &:hover {
+      border-color: @dark-blue;
+    }
+
+    &:focus {
+      border-color: @pink;
+      outline: none;
+    }
+  }
+}
+
+.contest__textarea {
+  font: inherit;
+  font-size: 18px;
+  width: 276px;
+  height: 197px;
+  resize: none;
+  padding: 22px 20px;
+  box-sizing: border-box;
+}
+
+.contest__submit {
+  font: inherit;
+  color: @white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  width: 276px;
+  height: 59px;
+  border-radius: 4px;
+  margin: 52px 20px 46px;
+  background: @green;
+  border: 2px solid @green;
+
+  &:focus,
+  &:hover {
+    background-color: @dark-green;
+    border-color: @dark-green;
+  }
+
+  &:active {
+    color: @fade-white;
+  }
+}
