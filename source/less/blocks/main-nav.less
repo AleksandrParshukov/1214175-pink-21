@@ -9,9 +9,27 @@
 }
 
 .main-nav__logo {
+  height: 69px;
   background-color: @dark-blue;
-  padding: 23px 20px;
   box-shadow: 0 1px 0 @black;
+  padding-top: 23px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:focus path,
+  &:hover path {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @fade-white;
+  }
+}
+
+.main-nav__logo-image {
+  width: 74px;
+  height: 23px;
 }
 
 .main-nav__list {

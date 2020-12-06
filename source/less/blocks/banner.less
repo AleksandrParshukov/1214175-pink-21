@@ -10,8 +10,10 @@
 
 .banner__wrapper {
   display: flex;
+  overflow: hidden;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .banner__caption {
@@ -21,11 +23,14 @@
 }
 
 .banner__image {
-  width: 320px;
   height: 286px;
+  width: auto;
+  margin-right: 145px;
 }
 
 .banner__link-wrapper {
+  width: 100%;
+  padding: 0 20px;
   background-color: @darken-blue;
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +47,7 @@
   width: 280px;
   height: 55px;
   padding: 15px 0;
-  margin: 28px 20px;
+  margin: 28px 0;
   border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
@@ -56,5 +61,24 @@
 
   &:active {
     color: @fade-pink;
+  }
+}
+
+.banner__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+}
+
+.banner__link {
+  &--image {
+    margin-right: 35px;
+  }
+
+  &--image:last-child {
+    margin-right: 0;
   }
 }

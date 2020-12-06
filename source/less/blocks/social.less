@@ -7,15 +7,29 @@
 }
 
 .social__item {
-  width: 48px;
-  height: 48px;
-  background-color: @white;
-  border: 3px solid @dark-blue;
-  border-radius: 50%;
-  opacity: 0.1;
   margin-right: 14px;
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.social__link {
+  width: 48px;
+  height: 48px;
+  background-color: @white;
+  border: 3px solid fade(@dark-blue, 10%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    border-color: @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }

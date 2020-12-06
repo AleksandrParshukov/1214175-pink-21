@@ -35,4 +35,35 @@
   text-decoration: none;
   color: @pink;
   line-height: 33px;
+
+  &:focus,
+  &:hover {
+    text-decoration-line: underline;
+    color: @dark-blue;
+  }
+
+  &:active {
+    text-decoration-line: none;
+    opacity: 30%;
+  }
+}
+
+.contacts__map {
+  width: 320px;
+  height: 200px;
+  position: relative;
+  margin-left: -40px;
+  z-index: -1;
+
+  &::after {
+    content: "";
+    width: 1200px;
+    height: 123px;
+    background-image: url("../img/triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
