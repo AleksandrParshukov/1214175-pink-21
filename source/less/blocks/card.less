@@ -1,0 +1,71 @@
+.card {
+  position: relative;
+  width: 280px;
+  background-color: @dark-white;
+  margin-bottom: 20px;
+
+  &--panorama::after {
+    content: "Панорама дня";
+    color: @white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 36px;
+    text-align: center;
+    width: 140px;
+    height: 36px;
+    background-color: @pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.card__image {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+
+  &--panorama {
+    width: 320px;
+    height: 137px;
+    margin-left: -20px;
+  }
+}
+
+.card__wrapper {
+  padding: 0 0  10px 17px;
+}
+
+.card__author {
+  margin: 0;
+}
+
+.card__author-name {
+  font-weight: bold;
+}
+
+.card__time {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card__like-button {
+  padding-top: 3px;
+  margin-right: 18px;
+  vertical-align: center;
+}
+
+.card__like-count {
+  color: @pink;
+  font-size: 12px;
+
+  text-transform: uppercase;
+}
