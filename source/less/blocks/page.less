@@ -12,6 +12,21 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: @black;
+  color: @dark-blue;
   background-color: transparent;
+  display: grid;
+  grid-template-rows: auto 67px auto auto;
+  grid-template-columns: 100%;
+
+  @media (min-width: @tablet-width) {
+    grid-template-rows: auto 111px auto auto;
+    font-size: 18px;
+    min-width: @tablet-width;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: auto auto auto;
+    min-width: @desktop-width;
+  }
 }

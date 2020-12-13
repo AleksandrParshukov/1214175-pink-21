@@ -1,18 +1,53 @@
 .banner {
+  height: 733px;
   color: @white;
   background-color: @dark-blue;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -66px;
+  background-position: center top;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    height: 729px;
+    background-image: url("../img/back-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 853px;
+    background-image: url("../img/back-desktop.jpg");
+  }
 }
 
 .banner__wrapper {
+  height: 100%;
+  padding: 0 20px;
+  background-image: url("../img/banner-phone.png");
+  background-size: auto 286px;
+  background-repeat: no-repeat;
+  background-position: -145px 176px;
   display: flex;
   overflow: hidden;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    margin: 0 auto;
+    background-image: url("../img/banner-phone.png");
+    background-size: auto 545px;
+    background-repeat: no-repeat;
+    background-position: -110px 183px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 130px;
+    background-image: url("../img/banner-phone.png");
+    background-size: auto 645px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
 }
 
 .banner__caption {
@@ -20,21 +55,32 @@
   width: 280px;
   font-size: 24px;
   line-height: 120%;
-}
+  margin-top: 95px;
+  margin-bottom: 310px;
 
-.banner__image {
-  height: 286px;
-  width: auto;
-  margin-right: 145px;
+  @media (min-width: @tablet-width) {
+    width: 240px;
+    font-size: 40px;
+    margin-bottom: 2px;
+    margin-top: 212px;
+    margin-left: 30px;
+  }
 }
 
 .banner__link-wrapper {
   width: 100%;
   padding: 0 20px;
+  margin-left: -20px;
   background-color: @darken-blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    width: 300px;
+    margin-bottom: 109px;
+  }
 }
 
 .banner__link--button {
@@ -62,6 +108,10 @@
   &:active {
     color: @fade-pink;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .banner__list {
@@ -81,4 +131,9 @@
   &--image:last-child {
     margin-right: 0;
   }
+}
+
+.banner__os-text {
+  font-weight: 300;
+  margin-top: 10px;
 }
