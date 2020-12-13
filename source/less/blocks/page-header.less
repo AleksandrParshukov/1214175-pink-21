@@ -1,0 +1,17 @@
+.page-header {
+  max-height: 325px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    max-height: 365px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-height: 110px;
+    grid-row-end: 2;
+  }
+}

@@ -1,8 +1,29 @@
+.page-footer {
+  background-color: @white;
+}
+
 .page-footer__wrapper {
+  width: @mobile-width;
+  max-width: 100%;
   padding: 0 20px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: @tablet-width;
+    height: 127px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 130px;
+    height: 197px;
+  }
 }
 
 .page-footer__link {

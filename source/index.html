@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -10,17 +11,17 @@
 <body class="page__body">
 <header class="page-header">
   <nav class="main-nav">
-    <a class="main-nav__logo">
-      <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 011.27 23 1.27 1.27 0 010 21.61V1.55zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04zM21.6 1.39A1.28 1.28 0 0122.85 0a1.27 1.27 0 011.27 1.39V21.6A1.28 1.28 0 0122.86 23a1.27 1.27 0 01-1.27-1.39V1.4zM30.67 1.42A1.28 1.28 0 0131.93.17h.34a1.54 1.54 0 011.29.74l13.6 17.4V1.36A1.24 1.24 0 0148.39.12a1.23 1.23 0 011.23 1.24v20.3a1.14 1.14 0 01-1.15 1.17h-.13a1.7 1.7 0 01-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 01-1.2 1.25 1.23 1.23 0 01-1.2-1.25V1.42h-.05zM55.94 1.39A1.28 1.28 0 0157.2 0a1.27 1.27 0 011.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 011.21 1.26 1.29 1.29 0 01-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 01-1.34 1.28 1.23 1.23 0 01-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 01-1.26 1.27 1.26 1.26 0 01-1.26-1.27V1.4h-.01z" fill="#fff"/>
-      </svg>
-    </a>
-
-    <button class="main-nav__toggle visually-hidden" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-
     <div class="main-nav__wrapper">
+      <a class="main-nav__logo">
+        <svg class="main-nav__logo-image" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8 7.36H2.53v6.8A1.28 1.28 0 011.27 23 1.27 1.27 0 010 21.61V1.55zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04zM21.6 1.39A1.28 1.28 0 0122.85 0a1.27 1.27 0 011.27 1.39V21.6A1.28 1.28 0 0122.86 23a1.27 1.27 0 01-1.27-1.39V1.4zM30.67 1.42A1.28 1.28 0 0131.93.17h.34a1.54 1.54 0 011.29.74l13.6 17.4V1.36A1.24 1.24 0 0148.39.12a1.23 1.23 0 011.23 1.24v20.3a1.14 1.14 0 01-1.15 1.17h-.13a1.7 1.7 0 01-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 01-1.2 1.25 1.23 1.23 0 01-1.2-1.25V1.42h-.05zM55.94 1.39A1.28 1.28 0 0157.2 0a1.27 1.27 0 011.26 1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 011.21 1.26 1.29 1.29 0 01-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.31 1.31 0 01-1.34 1.28 1.23 1.23 0 01-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27 1.27 0 01-1.26 1.27 1.26 1.26 0 01-1.26-1.27V1.4h-.01z" fill="#fff"/>
+        </svg>
+      </a>
+
+      <button class="main-nav__toggle visually-hidden" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a class="site-list__link">Главная</a>
@@ -46,8 +47,7 @@
     <div class="banner__wrapper">
       <h2 class="visually-hidden">Скачайте наше приложение</h2>
 
-      <p class="banner__caption">Взглните на жизнь иначе!</p>
-      <img class="banner__image" src="img/banner-phone.png" width="1050" height="645" alt="Изображение приложения">
+      <p class="banner__caption">Взгляните на жизнь иначе!</p>
       <div class="banner__link-wrapper">
         <a class="banner__link banner__link--button" href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a>
         <ul class="banner__list">
@@ -70,7 +70,7 @@
     <div class="advantages__wrapper">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <p class="advantages__caption">Устали от серости мегаполиса?</p>
-      <p class="advantages__caption">Нам есть, что вам предложить!</p>
+      <p class="advantages__caption">Нам есть, что вам <br> предложить!</p>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--cheer">
           <h3 class="advantages__title">Поднимает настроение</h3>
@@ -91,23 +91,37 @@
     </div>
   </section>
 
+  <section class="news">
+    <div class="news__wrapper">
+      <h2 class="visually-hidden">Новости</h2>
+      <div class="news__item">
+        <h3 class="news__title">Эффект<br> на 24 часа!</h3>
+        <p class="news__text">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+        <a class="news__link" href="#">Узнать больше об исследовании</a>
+      </div>
+    </div>
+  </section>
+
   <section class="reviews">
     <div class="reviews__wrapper slider">
       <h2 class="visually-hidden">Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item slider__item slider__item--current">
           <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__author-info">25 лет, водитель трамвая</p>
           <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
             фотографии!"</p>
         </li>
         <li class="reviews__item slider__item slider__item--current">
           <p class="reviews__author-name">Пётр Николаев</p>
+          <p class="reviews__author-info">43 лет, шатёр</p>
           <p class="reviews__text">"Отличное приложение! Никогда не мог подумать, что буду зависать в соцсетях,
             но потом я встретил Пинк."</p>
         </li>
         <li class="reviews__item slider__item slider__item--current">
           <p class="reviews__author-name">Грут</p>
+          <p class="reviews__author-info">101 год, страж галактики</p>
           <p class="reviews__text">"Я есть Грут!"</p>
         </li>
       </ul>
@@ -126,6 +140,7 @@
       <h2 class="visually-hidden">Наши предложения</h2>
       <table class="offers__table products">
         <tr>
+          <th class="products__offer--empty"></th>
           <th class="products__offer">
             <p class="products__offer-name">База</p>
             <p class="products__offer-price">1,99 USD</p>
@@ -191,7 +206,7 @@
           <h3 class="contacts__title">Звоните:</h3>
           <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--mail">
           <h3 class="contacts__title">Пишите:</h3>
           <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
@@ -201,7 +216,7 @@
         </li>
       </ul>
       <div class="contacts__map">
-        <img src="img/map.jpg" width="320" height="200" alt="Карта">
+        <img src="img/mobile-map.jpg" width="320" height="200" alt="Карта">
       </div>
     </div>
   </section>
