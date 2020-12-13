@@ -8,25 +8,29 @@
   @media (min-width: @tablet-width) {
     display: block;
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: @dark-white;
+  }
 }
 
 .news__wrapper {
   width: @tablet-width;
+  max-width: 100%;
   padding: 0 20px;
+  margin: 0 auto;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     padding-top: 45px;
     height: 330px;
-    margin: auto;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     padding: 0 130px;
     height: 430px;
-    background-color: @dark-white;
   }
 }
 

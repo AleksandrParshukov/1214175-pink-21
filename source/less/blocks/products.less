@@ -8,7 +8,6 @@
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 2px;
-  margin-left: 20px;
   transform: translateX((@mobile-cell-width + 2) * -1);
 
   @media (min-width: @tablet-width) {
@@ -32,6 +31,8 @@
   border-right: 2px solid @dark-white;
   border-top: 2px solid @dark-blue;
   border-bottom: 2px solid @dark-blue;
+  background-clip: padding-box;
+  box-sizing: border-box;
 
   &--empty {
     display: none;
@@ -125,6 +126,7 @@
   height: 59px;
   background-color: @white;
   border: 2px solid @darken-white;
+  background-clip: padding-box;
 
   &--name {
     display: none;
