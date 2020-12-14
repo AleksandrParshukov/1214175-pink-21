@@ -5,16 +5,72 @@
   line-height: 30px;
 }
 
+.contest__wrapper {
+  width: @mobile-width;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto 26px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 130px;
+    margin-bottom: 0;
+  }
+}
+
 .contest__description {
   text-align: center;
-  padding: 0 20px;
   margin: 54px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.contest__form {
+  width: @mobile-width - 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - 260px;
+  }
 }
 
 .contest__fieldset {
   border: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: 2px solid @darken-white;
+    border-radius: 1px;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+
+    &:first-child {
+      width: 433px;
+    }
+  }
 }
 
 .contest__legend {
@@ -40,40 +96,6 @@
   }
 }
 
-.contest__input {
-  &--text {
-    color: inherit;
-    font-size: 18px;
-    border: 2px solid @darken-white;
-    border-radius: 4px;
-    width: 276px;
-    height: 59px;
-    box-sizing: border-box;
-    padding-left: 22px;
-    margin-top: 10px;
-    margin-bottom: 29px;
-
-    &:hover {
-      border-color: @dark-blue;
-    }
-
-    &:focus {
-      border-color: @pink;
-      outline: none;
-    }
-  }
-}
-
-.contest__textarea {
-  font: inherit;
-  font-size: 18px;
-  width: 276px;
-  height: 197px;
-  resize: none;
-  padding: 22px 20px;
-  box-sizing: border-box;
-}
-
 .contest__submit {
   font: inherit;
   color: @white;
@@ -95,5 +117,11 @@
 
   &:active {
     color: @fade-white;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+    margin: 69px 0 0;
+    order: 6;
   }
 }
