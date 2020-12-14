@@ -1,10 +1,51 @@
 .achievements-form {
-  background-color: @dark-white;
-  margin-bottom: 42px;
+  position: relative;
+  margin-top: 76px;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 604px;
+    background-color: @dark-white;
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-top: 65px;
+    order: 4;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 233px;
+  }
 }
 
 .achievements-form__legend {
   margin: 42px 0;
+}
+
+.achievements-form__list {
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 62px;
+    background-color: transparent;
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .achievements-form__item {
