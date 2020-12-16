@@ -3,6 +3,7 @@
   width: 280px;
   background-color: @dark-white;
   margin-bottom: 20px;
+  text-align: start;
 
   &--panorama::after {
     content: "Панорама дня";
@@ -19,6 +20,28 @@
     top: 0;
     right: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+
+    &--panorama {
+      width: 620px;
+
+      &::after {
+        top: 57px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--panorama {
+      width: 940px;
+
+      &::after {
+        top: 54px;
+      }
+    }
+  }
 }
 
 .card__image {
@@ -30,6 +53,27 @@
     width: 320px;
     height: 137px;
     margin-left: -20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      width: 660px;
+      height: 509px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+
+    &--panorama {
+      width: 1200px;
+      height: 506px;
+      margin-left: -130px;
+    }
   }
 }
 
