@@ -7,6 +7,14 @@
   border: 3px solid;
   box-sizing: border-box;
   border-radius: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
 }
 
 .button__submit {
@@ -24,6 +32,15 @@
   &:active {
     color: @fade-white;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .button__reset {
@@ -40,5 +57,9 @@
   &:active {
     color: @white;
     background-color: @dark-blue;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }
