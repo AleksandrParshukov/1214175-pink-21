@@ -8,7 +8,7 @@
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 2px;
-  transform: translateX((@mobile-cell-width + 2) * -1);
+  transform: translateX((@mobile-cell-width + 4) * -1);
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -16,8 +16,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 193px 0 0;
-    transform: translateX(0);
+    margin: 190px 0 0;
   }
 }
 
@@ -26,13 +25,12 @@
   vertical-align: middle;
   color: @white;
   min-width: @mobile-cell-width;
-  height: 94px;
+  height: 92px;
   background-color: @dark-blue;
   border-right: 2px solid @dark-white;
   border-top: 2px solid @dark-blue;
   border-bottom: 2px solid @dark-blue;
   background-clip: padding-box;
-  box-sizing: border-box;
 
   &--empty {
     display: none;
@@ -51,8 +49,8 @@
     content: "Хит";
     position: absolute;
     font-weight: normal;
-    top: 10px;
-    left: -25px;
+    top: 15px;
+    left: -26px;
     font-size: 14px;
     line-height: 23px;
     width: 105px;
@@ -62,8 +60,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: @tablet-cell-width;
-    height: 75px;
+    min-width: 147px;
+    height: 73px;
 
     &--empty {
       display: table-cell;
@@ -80,7 +78,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: @desktop-cell-width;
-    height: 94px;
+    height: 92px;
 
     &--empty {
       display: table-cell;
@@ -106,6 +104,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    margin-top: -8px;
   }
 }
 
@@ -116,6 +115,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    margin-top: 4px;
   }
 }
 
@@ -123,7 +123,7 @@
   position: relative;
   font-size: 14px;
   line-height: 30px;
-  height: 59px;
+  height: 57px;
   background-color: @white;
   border: 2px solid @darken-white;
   background-clip: padding-box;
@@ -141,23 +141,27 @@
     content: "Розовый фильтр";
     position: absolute;
     left: 20px;
+    top: 14px;
   }
 
   &--smile::before {
     content: "Смайлики";
     position: absolute;
     left: 20px;
+    top: 14px;
   }
 
   &--comments::before {
     content: "Комментарии";
     position: absolute;
     left: 20px;
+    top: 14px;
   }
 
   @media (min-width: @tablet-width) {
     vertical-align: middle;
-    height: 45px;
+    height: 43px;
+    width: @tablet-cell-width;
 
     &--name {
       display: table-cell;
@@ -165,7 +169,6 @@
       line-height: 30px;
       text-transform: none;
       padding-left: 15px;
-      width: @tablet-cell-width;
       text-align: left;
     }
 
@@ -184,6 +187,44 @@
 
     &--comments::before {
       content: "";
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 57px;
+    width: @desktop-cell-width;
+
+    &--name {
+      display: table-cell;
+      font-size: 18px;
+      padding-left: 22px;
+    }
+
+    &--status {
+      text-align: center;
+      padding: 0;
+    }
+  }
+}
+
+.products__icon {
+  &--on {
+    margin-top: 10px;
+  }
+
+  &--off {
+    margin-top: 10px;
+    margin-right: 2px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--on {
+      margin-top: 8px;
+    }
+
+    &--off {
+      margin-top: 8px;
+      margin-right: 2px;
     }
   }
 }
