@@ -1,0 +1,19 @@
+.br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    &--tablet {
+      display: initial;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: initial;
+    }
+  }
+}
