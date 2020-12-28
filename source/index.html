@@ -79,8 +79,8 @@
         </li>
         <li class="advantages__item advantages__item--change">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-            чтобы усилить эффект</p>
+          <p class="advantages__description">Сделайте снимок и <br class="br br--desktop"> украсьте его смайликом <br class="br br--desktop"> или текстовой подписью,
+            чтобы <br class="br br--tablet"> усилить эффект</p>
         </li>
         <li class="advantages__item advantages__item--friends">
           <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -95,8 +95,8 @@
     <div class="news__wrapper">
       <h2 class="visually-hidden">Новости</h2>
       <div class="news__item">
-        <h3 class="news__title">Эффект<br> на 24 часа!</h3>
-        <p class="news__text">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+        <h3 class="news__title">Эффект <br class="br br--tablet"> на 24 часа!</h3>
+        <p class="news__text">Британские ученые провели исследования <br class="br br--tablet"> и доказали, <br class="br br--desktop"> что положительный эффект <br class="br br--tablet"> от использования приложения длится целые сутки!</p>
         <a class="news__link" href="#">Узнать больше об исследовании</a>
       </div>
     </div>
@@ -105,24 +105,25 @@
   <section class="reviews">
     <div class="reviews__wrapper slider">
       <h2 class="visually-hidden">Отзывы</h2>
+      <button class="slider__nav slider__nav--prev" type="button"></button>
       <ul class="reviews__list">
         <li class="reviews__item slider__item slider__item--current">
           <p class="reviews__author-name">Николай Петров</p>
           <p class="reviews__author-info">25 лет, водитель трамвая</p>
-          <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-            фотографии!"</p>
+            фотографии!&raquo;</p>
         </li>
         <li class="reviews__item slider__item slider__item--current">
           <p class="reviews__author-name">Пётр Николаев</p>
           <p class="reviews__author-info">43 лет, шатёр</p>
-          <p class="reviews__text">"Отличное приложение! Никогда не мог подумать, что буду зависать в соцсетях,
-            но потом я встретил Пинк."</p>
+          <p class="reviews__text">&laquo;Отличное приложение! Никогда не мог подумать, что буду зависать в соцсетях,
+            но потом я встретил Пинк.&raquo;</p>
         </li>
         <li class="reviews__item slider__item slider__item--current">
           <p class="reviews__author-name">Грут</p>
           <p class="reviews__author-info">101 год, страж галактики</p>
-          <p class="reviews__text">"Я есть Грут!"</p>
+          <p class="reviews__text">&laquo;Я есть Грут!&raquo;</p>
         </li>
       </ul>
 
@@ -132,6 +133,7 @@
         <button class="slider__toggle" type="button"></button>
       </p>
 
+      <button class="slider__nav slider__nav--next" type="button"></button>
     </div>
   </section>
 
@@ -157,34 +159,34 @@
         <tr>
           <td class="products__feature products__feature--name">Розовый фильтр</td>
           <td class="products__feature products__feature--status products__feature--filter">
-            <img src="img/yes.svg" width="31" height="21" alt="Есть">
+            <img class="products__icon products__icon--on" src="img/yes.svg" width="31" height="21" alt="Есть">
           </td>
           <td class="products__feature products__feature--status products__feature--filter">
-            <img src="img/yes.svg" width="31" height="21" alt="Есть">
+            <img class="products__icon products__icon--on" src="img/yes.svg" width="31" height="21" alt="Есть">
           </td>
           <td class="products__feature products__feature--status products__feature--filter">
-            <img src="img/yes.svg" width="31" height="21" alt="Есть">
+            <img class="products__icon products__icon--on" src="img/yes.svg" width="31" height="21" alt="Есть">
           </td>
         </tr>
         <tr>
           <td class="products__feature products__feature--name">Смайлики</td>
           <td class="products__feature products__feature--status products__feature--smile">
-            <img src="img/no.svg" width="27" height="27" alt="Нет"></td>
+            <img class="products__icon products__icon--off" src="img/no.svg" width="27" height="27" alt="Нет"></td>
           <td class="products__feature products__feature--status products__feature--smile">
-            <img src="img/yes.svg" width="31" height="21" alt="Есть"></td>
+            <img class="products__icon products__icon--on" src="img/yes.svg" width="31" height="21" alt="Есть"></td>
           <td class="products__feature products__feature--status products__feature--smile">
-            <img src="img/yes.svg" width="31" height="21" alt="Есть"></td>
+            <img class="products__icon products__icon--on" src="img/yes.svg" width="31" height="21" alt="Есть"></td>
         </tr>
         <tr>
           <td class="products__feature products__feature--name">Комментарии</td>
           <td class="products__feature products__feature--status products__feature--comments">
-            <img src="img/no.svg" width="27" height="27" alt="Нет">
+            <img class="products__icon products__icon--off" src="img/no.svg" width="27" height="27" alt="Нет">
           </td>
           <td class="products__feature products__feature--status products__feature--comments">
-            <img src="img/no.svg" width="27" height="27" alt="Нет">
+            <img class="products__icon products__icon--off" src="img/no.svg" width="27" height="27" alt="Нет">
           </td>
           <td class="products__feature products__feature--status products__feature--comments">
-            <img src="img/yes.svg" width="31" height="21" alt="Есть">
+            <img class="products__icon products__icon--on" src="img/yes.svg" width="31" height="21" alt="Есть">
           </td>
         </tr>
       </table>

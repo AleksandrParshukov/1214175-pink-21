@@ -1,16 +1,19 @@
 .social__list {
   list-style: none;
+  width: 178px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-}
+  justify-content: space-between;
 
-.social__item {
-  margin-right: 14px;
+  @media (min-width: @tablet-width) {
+    margin-left: -15px;
+  }
 
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: @desktop-width) {
+    margin-left: 8px;
+    width: 172px;
   }
 }
 
@@ -31,5 +34,13 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  &--facebook img {
+    margin-right: -1px;
+  }
+
+  &--youtube img {
+    margin-right: -5px;
   }
 }

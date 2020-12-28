@@ -1,14 +1,15 @@
 .banner {
   color: @white;
   background-color: @darken-blue;
-  background-image: url("../img/back-mobile-1.jpg");
-  background-size: auto 462px;
+  background-image: url("../img/back-mobile-2.jpg");
+  background-size: auto 441px;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 21px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
+    background-position: center;
     background-size: auto;
   }
 
@@ -22,10 +23,10 @@
   max-width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  background-image: url("../img/banner-phone.png");
+  background-image: url("../img/banner-phone-mobile.png");
   background-size: auto 286px;
   background-repeat: no-repeat;
-  background-position: -145px 176px;
+  background-position: center 177px;
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -41,7 +42,7 @@
     background-image: url("../img/banner-phone.png");
     background-size: auto 545px;
     background-repeat: no-repeat;
-    background-position: -110px 183px;
+    background-position: -110px bottom;
 
     &--inner {
       background-image: none;
@@ -55,7 +56,7 @@
     background-image: url("../img/banner-phone.png");
     background-size: auto 645px;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: 146px bottom;
 
     &--inner {
       background-image: none;
@@ -68,7 +69,7 @@
   width: 280px;
   font-size: 24px;
   line-height: 120%;
-  margin-top: 95px;
+  margin-top: 90px;
   margin-bottom: 310px;
 
   &--inner {
@@ -81,7 +82,7 @@
     width: 240px;
     font-size: 40px;
     margin-bottom: 2px;
-    margin-top: 212px;
+    margin-top: 205px;
     margin-left: 30px;
 
     &--inner {
@@ -94,6 +95,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 210px;
+    margin-bottom: 7px;
+
     &--inner {
       width: 750px;
       margin-top: 184px;
@@ -113,7 +119,11 @@
   @media (min-width: @tablet-width) {
     background-color: transparent;
     width: 300px;
-    margin-bottom: 109px;
+    margin-bottom: 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 95px;
   }
 }
 
@@ -127,7 +137,8 @@
   width: 280px;
   height: 55px;
   padding: 15px 0;
-  margin: 28px 0;
+  margin-top: 35px;
+  margin-bottom: 19px;
   border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
@@ -145,6 +156,12 @@
 
   @media (min-width: @tablet-width) {
     width: 300px;
+    margin-top: 28px;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
   }
 }
 
@@ -155,11 +172,17 @@
   justify-items: center;
   align-items: center;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    margin-bottom: 37px;
+  }
 }
 
 .banner__link {
   &--image {
     margin-right: 35px;
+    height: auto;
   }
 
   &--image:last-child {
@@ -169,5 +192,10 @@
 
 .banner__os-text {
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 9px;
+  }
 }
