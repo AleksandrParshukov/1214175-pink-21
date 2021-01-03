@@ -1,12 +1,11 @@
 .name-form {
   @media (min-width: @tablet-width) {
-    height: 289px;
     width: 100%;
     order: 1;
   }
 
   @media (min-width: @desktop-width) {
-    height: 291px;
+    margin-top: 15px;
   }
 }
 
@@ -25,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 52px;
   }
 }
 
@@ -33,19 +33,18 @@
   font-size: 14px;
   text-transform: uppercase;
   margin-left: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .name-form__input {
-  color: inherit;
-  font-size: 18px;
-  border: 2px solid @darken-white;
-  border-radius: 4px;
-  width: 276px;
-  height: 59px;
-  box-sizing: border-box;
-  padding-left: 22px;
-  margin-top: 10px;
-  margin-bottom: 29px;
+  width: 280px;
+  height: 63px;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 17px;
 
   &:hover {
     border-color: @dark-blue;
@@ -57,7 +56,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 18px;
     flex-grow: 1;
   }
 }

@@ -1,6 +1,6 @@
 .achievements-form {
   position: relative;
-  margin-top: 76px;
+  margin-top: 64px;
 
   &::before {
     content: "";
@@ -8,7 +8,7 @@
     height: 604px;
     background-color: @dark-white;
     position: absolute;
-    top: -42px;
+    top: -39px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -16,7 +16,8 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    margin-top: 65px;
+    margin-top: 56px;
+    padding: 49px 0 0;
     order: 4;
 
     &::before {
@@ -25,17 +26,29 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 233px;
+    height: 187px;
+    margin-top: 57px;
   }
 }
 
 .achievements-form__legend {
-  margin: 42px 0;
+  width: 218px;
+  margin: 0 0 42px 11px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 32px;
+  }
 }
 
 .achievements-form__list {
   @media (min-width: @tablet-width) {
-    padding: 0 0 0 62px;
+    padding: 0 0 0 58px;
     background-color: transparent;
     order: 4;
   }
@@ -64,7 +77,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
     width: 35px;
     height: 35px;
