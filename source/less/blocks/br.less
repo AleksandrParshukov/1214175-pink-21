@@ -1,7 +1,15 @@
 .br {
   display: none;
 
+  &--mobile {
+    display: initial;
+  }
+
   @media (min-width: @tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
     &--tablet {
       display: initial;
     }

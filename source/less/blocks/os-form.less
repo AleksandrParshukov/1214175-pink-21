@@ -1,6 +1,6 @@
 .os-form {
-  margin-top: 86px;
-  margin-bottom: 42px;
+  margin-top: 64px;
+  margin-bottom: 40px;
   box-sizing: border-box;
   position: relative;
 
@@ -10,7 +10,7 @@
     height: 340px;
     background-color: @dark-white;
     position: absolute;
-    top: -42px;
+    top: -39px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -18,9 +18,9 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    height: 300px;
-    margin-top: 65px;
+    margin-top: 6px;
     margin-bottom: 0;
+    padding: 48px 0 14px;
     order: 2;
 
     &::before {
@@ -29,29 +29,37 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 302px;
-    width: 431px;
+    width: 434px;
     margin-top: 0;
   }
 }
 
 .os-form__legend {
-  margin: 42px 0;
+  margin: 42px 0 38px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 24px;
+  }
 }
 
 .os-form__list {
   @media (min-width: @tablet-width) {
-    padding-left: 82px;
+    padding-left: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 74px;
+    padding-left: 71px;
   }
 }
 
 .os-form__item {
   height: 37px;
   margin-bottom: 38px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .os-form__label {
@@ -81,6 +89,10 @@
 
   &:active::before {
     border-color: @pink;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
   }
 }
 

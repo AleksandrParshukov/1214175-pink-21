@@ -51,8 +51,8 @@
   <section class="contest">
     <h2 class="visually-hidden">Анкета для участия в конкурсе</h2>
     <div class="contest__wrapper">
-      <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу
-        бонусную карту!</p>
+      <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу
+        бонусную карту! <span class="contest__mobile-hidden">Пожалуйста, заполните форму ниже:</span></p>
 
       <form class="contest__form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="contest__fieldset name-form">
@@ -106,11 +106,11 @@
         <fieldset class="contest__fieldset contacts-form">
           <legend class="contest__legend contacts-form__legend">Контактная информация</legend>
           <ul class="contest__list contacts-form__list">
-            <li class="contest__item contacts-form__item">
+            <li class="contest__item contacts-form__item contacts-form__item--phone">
               <label class="contest__label contacts-form__label" for="contest__phone">Номер телефона</label>
               <input class="contest__input contacts-form__input" type="text" name="contest__phone" id="contest__phone" placeholder="Номер, пожалуйста" value="Номер, пожалуйста">
             </li>
-            <li class="contest__item contacts-form__item">
+            <li class="contest__item contacts-form__item contacts-form__item--mail">
               <label class="contest__label contacts-form__label" for="contest__mail">Адрес почты</label>
               <input class="contest__input contacts-form__input" name="contest__mail" id="contest__mail" placeholder="Введите почту *" value="Введите почту *">
             </li>
@@ -141,12 +141,26 @@
           <textarea class="contest__textarea textarea__input" id="contest__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
         <button class="contest__submit" type="submit">Отправить форму</button>
-        <p class="contest__footnote footnote"><i class="footnote__term">*</i> &mdash; обязательные поля</p>
+        <p class="contest__footnote footnote"><i class="footnote__term">*</i> &mdash; обязательные <span class="footnote__desktop-only">для заполнения</span> поля</p>
       </form>
     </div>
   </section>
 
+  <section class="popup popup--error visually-hidden">
+    <h2 class="popup__caption">Что-то пошло <br class="br br--tablet"> не так!</h2>
+    <p class="popup__text">Проверьте поля, выделенные <br class="br br--tablet"> красным, <br class="br br--desktop"> скорее всего вы забыли <br class="br br--tablet"> их заполнить</p>
+    <div class="popup__button-wrapper popup__button-wrapper--error">
+      <button class="popup__button popup__button" type="button">Ок</button>
+    </div>
+  </section>
 
+  <section class="popup popup--success visually-hidden">
+    <h2 class="popup__caption">Ваша заявка <br class="br br--tablet"> отправлена</h2>
+    <p class="popup__text">Спасибо за ваше участие, ваша <br class="br br--tablet"> заявка уже <br class="br br--desktop"> поступила к нам. В <br class="br br--tablet"> ближайшее время мы <br class="br br--desktop"> рассмотрим <br class="br br--tablet"> ее и <br class="br br--mobile"> оповестим вас.</p>
+    <div class="popup__button-wrapper popup__button-wrapper--success">
+      <button class="popup__button popup__button--success" type="button">Закрыть окно</button>
+    </div>
+  </section>
 </main>
 
 <footer class="page-footer">
