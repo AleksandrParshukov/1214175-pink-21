@@ -44,25 +44,25 @@
 <main class="page-main">
   <section class="banner">
     <div class="banner__wrapper banner__wrapper--inner">
-      <h1 class="banner__caption banner__caption--inner">Фотографии пользователей</h1>
+      <h1 class="banner__caption banner__caption--inner">Фотографии <br class="br br--desktop"> пользователей</h1>
     </div>
   </section>
 
   <section class="entries">
     <div class="entries__wrapper">
       <h2 class="visually-hidden">Лента фотографий</h2>
-      <p class="entries__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="entries__description">Взгляните на фотографии, которые выкладывают <br class="br br--tablet"> пользователи! <br class="br br--mobile"> Видите, как не хватает ваших?</p>
 
       <div class="entries__card card card--panorama">
         <a class="card__img-link"><img class="card__image card__image--panorama" src="img/panorama.jpg" width="1200" height="506" alt="Панорама с моста в горах"></a>
-        <div class="card__wrapper">
+        <div class="card__wrapper card__wrapper--panorama">
           <p class="card__author">
             <span class="card__author-name">Анна</span>
             <span class="card__time">(5 минут назад)</span>
           </p>
-          <p class="card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <a class="card__like-button"><img src="img/heart.svg" width="13" height="12" alt="Лайк"></a>
-          <span class="card__like-count">Нравится: 215</span>
+          <p class="card__text card__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и <br class="br br--mobile"> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <a class="card__like-button card__like-button--panorama"><img src="img/heart.svg" width="13" height="12" alt="Лайк"></a>
+          <span class="card__like-count card__like-count--panorama">Нравится: 215</span>
         </div>
       </div>
 
@@ -86,7 +86,7 @@
             <span class="card__author-name">Антон</span>
             <span class="card__time">(12 часов назад)</span>
           </p>
-          <p class="card__text">Соседи будут рады</p>
+          <p class="card__text">Соседи будут рады!</p>
           <a class="card__like-button"><img src="img/heart.svg" width="13" height="12" alt="Лайк"></a>
           <span class="card__like-count">Нравится: 666</span>
         </div>
@@ -164,7 +164,7 @@
           <div class="publication__range-filter  publication__range-filter--active">
             <div class="publication__range-controls">
               <div class="publication__scale"></div>
-              <button class="publication__toggle" type="button" aria-label="Уровень"></button>
+              <button class="publication__toggle publication__toggle--crop" type="button" aria-label="Уровень"></button>
             </div>
           </div>
           <button class="publication__filter publication__filter--fill" type="button">
@@ -177,7 +177,7 @@
           <div class="publication__range-filter">
             <div class="publication__range-controls">
               <div class="publication__scale"></div>
-              <button class="publication__toggle" type="button" aria-label="Уровень"></button>
+              <button class="publication__toggle publication__toggle--fill" type="button" aria-label="Уровень"></button>
             </div>
           </div>
           <button class="publication__filter publication__filter--contrast" type="button">
@@ -190,7 +190,7 @@
           <div class="publication__range-filter">
             <div class="publication__range-controls">
               <div class="publication__scale"></div>
-              <button class="publication__toggle" type="button" aria-label="Уровень"></button>
+              <button class="publication__toggle publication__toggle--contrast" type="button" aria-label="Уровень"></button>
             </div>
           </div>
         </div>
