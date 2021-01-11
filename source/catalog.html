@@ -54,7 +54,13 @@
       <p class="entries__description">Взгляните на фотографии, которые выкладывают <br class="br br--tablet"> пользователи! <br class="br br--mobile"> Видите, как не хватает ваших?</p>
 
       <div class="entries__card card card--panorama">
-        <a class="card__img-link"><img class="card__image card__image--panorama" src="img/panorama.jpg" width="1200" height="506" alt="Панорама с моста в горах"></a>
+        <a class="card__img-link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="card__image card__image--panorama" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="Панорама с моста в горах">
+          </picture>
+        </a>
         <div class="card__wrapper card__wrapper--panorama">
           <p class="card__author">
             <span class="card__author-name">Анна</span>
@@ -67,7 +73,13 @@
       </div>
 
       <div class="entries__card card">
-        <a class="card__img-link"><img class="card__image" src="img/photo-1.jpg" width="300" height="400"></a>
+        <a class="card__img-link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="card__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="Камера, на которую снимают автомобиль">
+          </picture>
+        </a>
         <div class="card__wrapper">
           <p class="card__author">
             <span class="card__author-name">Левон</span>
@@ -80,7 +92,13 @@
       </div>
 
       <div class="entries__card card">
-        <a class="card__img-link"><img class="card__image" src="img/photo-2.jpg" width="300" height="400"></a>
+        <a class="card__img-link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="card__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
+          </picture>
+        </a>
         <div class="card__wrapper">
           <p class="card__author">
             <span class="card__author-name">Антон</span>
@@ -93,7 +111,13 @@
       </div>
 
       <div class="entries__card card">
-        <a class="card__img-link"><img class="card__image" src="img/photo-3.jpg" width="300" height="400"></a>
+        <a class="card__img-link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="card__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="Вид на небо сквозь стеклянную крышу">
+          </picture>
+        </a>
         <div class="card__wrapper">
           <p class="card__author">
             <span class="card__author-name">Борис</span>
@@ -106,7 +130,13 @@
       </div>
 
       <div class="entries__card card">
-        <a class="card__img-link"><img class="card__image" src="img/photo-4.jpg" width="300" height="400"></a>
+        <a class="card__img-link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img class="card__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile.jpg 1x, img/photo-4-mobile@2x.jpg 2x" alt="Фото на ярмарке">
+          </picture>
+        </a>
         <div class="card__wrapper">
           <p class="card__author">
             <span class="card__author-name">Сергей</span>
@@ -119,7 +149,13 @@
       </div>
 
       <div class="entries__card card">
-        <a class="card__img-link"><img class="card__image" src="img/photo-5.jpg" width="300" height="400"></a>
+        <a class="card__img-link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+            <img class="card__image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile.jpg 1x, img/photo-5-mobile@2x.jpg 2x" alt="Ноги на фоне гор">
+          </picture>
+        </a>
         <div class="card__wrapper">
           <p class="card__author">
             <span class="card__author-name">Максим</span>
@@ -132,7 +168,13 @@
       </div>
 
       <div class="entries__card card">
-        <a class="card__img-link"><img class="card__image" src="img/photo-6.jpg" width="300" height="400"></a>
+        <a class="card__img-link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+            <img class="card__image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile.jpg 1x, img/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета">
+          </picture>
+        </a>
         <div class="card__wrapper">
           <p class="card__author">
             <span class="card__author-name">Надежда</span>
@@ -152,7 +194,7 @@
     <div class="publication__wrapper">
       <h2 class="visually-hidden">Опубликуйте свою фотографию</h2>
       <form class="publication__form" method="get" action="https://echo.htmlacademy.ru">
-        <img class="publication__photo" src="img/photo-7.jpg" width="300" height="400" alt="Заснеженная дорога">
+        <img class="publication__photo" src="img/photo-7.jpg" width="300" height="400" alt="Ваше фото">
         <div class="publication__filter-wrapper">
           <button class="publication__filter publication__filter--crop publication__filter--active" type="button">
             <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
