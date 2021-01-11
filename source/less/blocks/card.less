@@ -4,6 +4,8 @@
   background-color: @dark-white;
   margin-bottom: 20px;
   text-align: start;
+  display: flex;
+  flex-direction: column;
 
   &--panorama::after {
     content: "Панорама дня";
@@ -23,9 +25,11 @@
 
   @media (min-width: @tablet-width) {
     width: 300px;
+    margin-bottom: 20px;
 
     &--panorama {
       width: 620px;
+      margin-bottom: 50px;
 
       &::after {
         top: 57px;
@@ -34,8 +38,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+
     &--panorama {
       width: 940px;
+      margin-bottom: 49px;
 
       &::after {
         top: 54px;
@@ -78,38 +85,114 @@
 }
 
 .card__wrapper {
-  padding: 0 0  10px 17px;
+  padding: 5px 0  15px 17px;
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    min-height: 145px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 11px 30px  20px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "author author" "text text" "count like";
+
+    &--panorama {
+      min-height: 0;
+      padding: 11px 30px  16px;
+      grid-template-columns: 1fr max-content min-content;
+      grid-template-rows: min-content min-content;
+      grid-template-areas: "author count like" "text text text";
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 11px 30px  16px 27px;
+  }
 }
 
 .card__author {
   margin: 0;
+  line-height: 29px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-right: auto;
+  }
 }
 
 .card__author-name {
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .card__time {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -2px;
+  }
 }
 
 .card__text {
   font-size: 14px;
   line-height: 24px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: -1px 0 7px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 230px;
+    max-width: 240px;
+    margin: -1px 0 9px;
+    order: 2;
+    grid-area: text;
+
+    &--panorama {
+      max-width: 560px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--panorama {
+      max-width: 886px;
+    }
+  }
 }
 
 .card__like-button {
   padding-top: 3px;
-  margin-right: 18px;
+  margin-right: 15px;
   vertical-align: center;
+
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-left: 17px;
+    padding: 0;
+    grid-area: like;
+    justify-self: end;
+  }
 }
 
 .card__like-count {
   color: @pink;
   font-size: 12px;
-
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    line-height: 14px;
+    grid-area: count;
+    align-self: center;
+
+    &--panorama {
+      margin-right: 0;
+      margin-top: 6px;
+    }
+  }
 }
