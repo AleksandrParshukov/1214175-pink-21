@@ -1,0 +1,61 @@
+.logo {
+  width: @mobile-width;
+  margin: 0 auto;
+  color: @white;
+  fill: @white;
+
+  &:focus,
+  &:hover {
+    color: @pink;
+    fill: @pink;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 150px;
+  }
+}
+
+.logo__glasses-tablet {
+  width: 68px;
+  height: 40px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__glasses-desktop {
+  width: 68px;
+  height: 40px;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}
+
+.logo__text {
+  width: 75px;
+  height: 33px;
+}
+
+.logo__star {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}
