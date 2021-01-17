@@ -1,0 +1,46 @@
+.logo-footer {
+  color: @dark-blue;
+  fill: @pink;
+
+  &:focus,
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: @dark-blue;
+    opacity: 30%;
+  }
+}
+
+.logo-footer__glasses-tablet {
+  width: 66px;
+  height: 40px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo-footer__glasses-desktop {
+  width: 68px;
+  height: 40px;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}
+
+.logo-footer__text {
+  width: 75px;
+  height: 33px;
+}
+
+.logo-footer__star {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}
