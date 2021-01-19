@@ -97,6 +97,11 @@
   margin-right: 35px;
   cursor: pointer;
 
+  & svg {
+    fill: @dark-blue;
+    opacity: 30%;
+  }
+
   &:nth-of-type(3n+1) {
     margin-left: -11px;
   }
@@ -105,13 +110,13 @@
     margin-right: 0;
   }
 
-  &:focus g,
-  &:hover g {
+  &:focus svg,
+  &:hover svg {
     opacity: 50%;
   }
 
-  &:active g,
-  &--active g {
+  &:active svg,
+  &--active svg {
     fill: @pink;
     opacity: 100%;
   }
@@ -122,18 +127,18 @@
     height: 48px;
     transform: scale(0.5);
 
-    g {
+    svg {
       fill: @pink;
       opacity: 100%;
     }
 
-    &:focus g,
-    &:hover g {
+    &:focus svg,
+    &:hover svg {
       opacity: 100%;
     }
 
-    &:active g,
-    &--active g {
+    &:active svg,
+    &--active svg {
       opacity: 100%;
     }
   }
