@@ -1,7 +1,7 @@
 .advantages {
   text-align: center;
   line-height: 24px;
-  background-color: transparent;
+  background-color: @white;
   background-image: url("../img/grey-background-1.svg");
   background-size: auto 830px;
   background-repeat: no-repeat;
@@ -61,6 +61,7 @@
   list-style: none;
   padding: 85px 0 289px;
   margin: 0;
+  background-color: transparent;
   background-image: url("../img/iphone-mobile.png");
   background-size: 157px 320px;
   background-repeat: no-repeat;
@@ -87,7 +88,6 @@
   @media (min-width: @desktop-width) {
     margin-top: 55px;
     padding: 0;
-    justify-content: space-between;
     background: none;
   }
 }
@@ -111,9 +111,15 @@
     width: 300px;
     padding: 357px 0 0;
     text-align: center;
+    background-color: transparent;
     background-size: 300px 301px;
     background-repeat: no-repeat;
     background-position: center top;
+    margin-right: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
     &--cheer {
       background-image: url("../img/iphone-1-desktop.png");

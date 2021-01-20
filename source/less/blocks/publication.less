@@ -97,11 +97,6 @@
   margin-right: 35px;
   cursor: pointer;
 
-  & svg {
-    fill: @dark-blue;
-    opacity: 30%;
-  }
-
   &:nth-of-type(3n+1) {
     margin-left: -11px;
   }
@@ -110,37 +105,12 @@
     margin-right: 0;
   }
 
-  &:focus svg,
-  &:hover svg {
-    opacity: 50%;
-  }
-
-  &:active svg,
-  &--active svg {
-    fill: @pink;
-    opacity: 100%;
-  }
 
   @media (min-width: @tablet-width) {
     margin: 0 0 0 -11px;
     width: 48px;
     height: 48px;
     transform: scale(0.5);
-
-    svg {
-      fill: @pink;
-      opacity: 100%;
-    }
-
-    &:focus svg,
-    &:hover svg {
-      opacity: 100%;
-    }
-
-    &:active svg,
-    &--active svg {
-      opacity: 100%;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -149,6 +119,37 @@
 
     &:nth-of-type(3n+1) {
       margin-left: 0;
+    }
+  }
+}
+
+.publication__filter-svg {
+  fill: @dark-blue;
+  opacity: 30%;
+
+  &:focus,
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:active,
+  &--active {
+    fill: @pink;
+    opacity: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    fill: @pink;
+    opacity: 100%;
+
+    &:focus,
+    &:hover {
+      opacity: 100%;
+    }
+
+    &:active,
+    &--active {
+      opacity: 100%;
     }
   }
 }
