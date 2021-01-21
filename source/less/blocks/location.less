@@ -1,0 +1,46 @@
+.location__wrapper {
+  width: 100%;
+}
+
+.location__map {
+  width: 100%;
+  height: 200px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 1200px;
+    height: 123px;
+    background-image: url("../img/triangle-white-footer.svg");
+    background-size: 1200px 123px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+
+    &::after {
+      top: -55px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+
+    &::after {
+      width: 1440px;
+      background-size: 1440px 123px;
+      background-image: url("../img/triangle-white-footer-desktop.svg");
+      top: -20px;
+    }
+  }
+}
+
+.location__map iframe {
+  width: 100%;
+  height: 100%;
+}
