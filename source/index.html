@@ -4,8 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
@@ -45,7 +49,7 @@
 <header class="page-header">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-      <a class="main-nav__logo">
+      <a class="main-nav__logo" aria-label="На главную">
         <div class="logo">
           <svg class="logo__glasses-tablet" width="68" height="40">
             <use xlink:href="#logo-glasses-tablet"></use>
@@ -285,7 +289,7 @@
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
       <h2 class="visually-hidden">Логотип приложения</h2>
-      <a class="page-footer__link logo-footer">
+      <a class="page-footer__link logo-footer" aria-label="На главную">
         <svg class="logo-footer__glasses-tablet" width="68" height="40">
           <use xlink:href="#logo-glasses-tablet"></use>
         </svg>

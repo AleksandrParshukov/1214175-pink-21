@@ -82,22 +82,20 @@
     border-radius: 50%;
   }
 
-  &:focus::before,
-  &:hover::before {
-    border-color: @dark-blue;
-  }
-
-  &:active::before {
-    border-color: @pink;
-  }
-
   @media (min-width: @tablet-width) {
     padding-left: 60px;
   }
 }
 
 .os-form__input {
-  display: none;
+  &:focus + .os-form__label::before,
+  &:hover + .os-form__label::before {
+    border-color: @dark-blue;
+  }
+
+  &:active + .os-form__label::before {
+    border-color: @pink;
+  }
 
   &:checked + .os-form__label::after {
     content: "";

@@ -4,8 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -46,7 +50,7 @@
 <header class="page-header">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-      <a class="main-nav__logo" href="index.html">
+      <a class="main-nav__logo" href="index.html" aria-label="На главную">
         <div class="logo">
           <svg class="logo__glasses-tablet" width="68" height="40">
             <use xlink:href="#logo-glasses-tablet"></use>
@@ -129,27 +133,27 @@
           <legend class="contest__legend achievements-form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="contest__list achievements-form__list">
             <li class="contest__item achievements-form__item">
-              <input class="contest__input achievements-form__input" type="checkbox" name="contest__shark" id="contest__shark" checked>
+              <input class="contest__input achievements-form__input visually-hidden" type="checkbox" name="contest__shark" value="contest__shark" id="contest__shark" checked>
               <label class="contest__label achievements-form__label" for="contest__shark">Сделал селфи с акулой</label>
             </li>
             <li class="contest__item achievements-form__item">
-              <input class="contest__input achievements-form__input" type="checkbox" name="contest__beach" id="contest__beach" checked>
+              <input class="contest__input achievements-form__input visually-hidden" type="checkbox" name="contest__beach" value="contest__beach" id="contest__beach" checked>
               <label class="contest__label achievements-form__label" for="contest__beach">Обгорел на пляже</label>
             </li>
             <li class="contest__item achievements-form__item">
-              <input class="contest__input achievements-form__input" type="checkbox" name="contest__chuck" id="contest__chuck">
+              <input class="contest__input achievements-form__input visually-hidden" type="checkbox" name="contest__chuck" value="contest__chuck" id="contest__chuck">
               <label class="contest__label achievements-form__label" for="contest__chuck">Видел Чака Норриса</label>
             </li>
             <li class="contest__item achievements-form__item">
-              <input class="contest__input achievements-form__input" type="checkbox" name="contest__souvenirs" id="contest__souvenirs">
+              <input class="contest__input achievements-form__input visually-hidden" type="checkbox" name="contest__souvenirs" value="contest__souvenirs" id="contest__souvenirs">
               <label class="contest__label achievements-form__label" for="contest__souvenirs">Накупил сувениров</label>
             </li>
             <li class="contest__item achievements-form__item">
-              <input class="contest__input achievements-form__input" type="checkbox" name="contest__tower" id="contest__tower" checked>
+              <input class="contest__input achievements-form__input visually-hidden" type="checkbox" name="contest__tower" value="contest__tower" id="contest__tower" checked>
               <label class="contest__label achievements-form__label" for="contest__tower">Удержал башню</label>
             </li>
             <li class="contest__item achievements-form__item">
-              <input class="contest__input achievements-form__input" type="checkbox" name="contest__hotel" id="contest__hotel">
+              <input class="contest__input achievements-form__input visually-hidden" type="checkbox" name="contest__hotel" value="contest__hotel" id="contest__hotel">
               <label class="contest__label achievements-form__label" for="contest__hotel">Разгромил отель</label>
             </li>
           </ul>
@@ -173,15 +177,15 @@
           <legend class="contest__legend os-form__legend">С каким приложением путешествовали?</legend>
           <ul class="contest__list os-form__list">
             <li class="contest__item os-form__item">
-              <input class="contest__input os-form__input" type="radio" name="contest__os" id="contest__ios" checked>
+              <input class="contest__input os-form__input visually-hidden" type="radio" name="contest__os" value="contest__os" id="contest__ios" checked>
               <label class="contest__label os-form__label" for="contest__ios">Pink для iOS</label>
             </li>
             <li class="contest__item os-form__item">
-              <input class="contest__input os-form__input" type="radio" name="contest__os" id="contest__android">
+              <input class="contest__input os-form__input visually-hidden" type="radio" name="contest__os" value="contest__os" id="contest__android">
               <label class="contest__label os-form__label" for="contest__android">Pink на Android</label>
             </li>
             <li class="contest__item os-form__item">
-              <input class="contest__input os-form__input" type="radio" name="contest__os" id="contest__windows">
+              <input class="contest__input os-form__input visually-hidden" type="radio" name="contest__os" value="contest__os" id="contest__windows">
               <label class="contest__label os-form__label" for="contest__windows">Windows Phone</label>
             </li>
           </ul>
@@ -198,7 +202,7 @@
     </div>
   </section>
 
-  <section class="popup popup--error visually-hidden">
+  <section class="popup popup--error">
     <h2 class="popup__caption">Что-то пошло <br class="br br--tablet"> не так!</h2>
     <p class="popup__text">Проверьте поля, выделенные <br class="br br--tablet"> красным, <br class="br br--desktop"> скорее всего вы забыли <br class="br br--tablet"> их заполнить</p>
     <div class="popup__button-wrapper popup__button-wrapper--error">
@@ -206,7 +210,7 @@
     </div>
   </section>
 
-  <section class="popup popup--success visually-hidden">
+  <section class="popup popup--success">
     <h2 class="popup__caption">Ваша заявка <br class="br br--tablet"> отправлена</h2>
     <p class="popup__text">Спасибо за ваше участие, ваша <br class="br br--tablet"> заявка уже <br class="br br--desktop"> поступила к нам. В <br class="br br--tablet"> ближайшее время мы <br class="br br--desktop"> рассмотрим <br class="br br--tablet"> ее и <br class="br br--mobile"> оповестим вас.</p>
     <div class="popup__button-wrapper popup__button-wrapper--success">
@@ -219,7 +223,7 @@
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
       <h2 class="visually-hidden">Логотип приложения</h2>
-      <a class="page-footer__link logo-footer" href="index.html">
+      <a class="page-footer__link logo-footer" href="index.html" aria-label="На главную">
         <svg class="logo-footer__glasses-tablet" width="68" height="40">
           <use xlink:href="#logo-glasses-tablet"></use>
         </svg>

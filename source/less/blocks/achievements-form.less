@@ -62,7 +62,7 @@
 }
 
 .achievements-form__item {
-  height: 35px;
+  min-height: 35px;
   margin-bottom: 47px;
 }
 
@@ -85,19 +85,17 @@
     border: 2px solid @darken-white;
     border-radius: 1px;
   }
-
-  &:focus::before,
-  &:hover::before {
-    border-color: @dark-blue;
-  }
-
-  &:active::before {
-    border-color: @pink;
-  }
 }
 
 .achievements-form__input {
-  display: none;
+  &:focus + .achievements-form__label::before,
+  &:hover + .achievements-form__label::before {
+    border-color: @dark-blue;
+  }
+
+  &:active + .achievements-form__label::before {
+    border-color: @pink;
+  }
 
   &:checked + .achievements-form__label::before {
     background-image: url("../img/tick.svg");

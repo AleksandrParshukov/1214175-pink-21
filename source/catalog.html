@@ -4,8 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -58,7 +62,7 @@
 <header class="page-header">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
-      <a class="main-nav__logo" href="index.html">
+      <a class="main-nav__logo" href="index.html" aria-label="На главную">
         <div class="logo">
           <svg class="logo__glasses-tablet" width="68" height="40">
             <use xlink:href="#logo-glasses-tablet"></use>
@@ -273,7 +277,7 @@
       <form class="publication__form" method="get" action="https://echo.htmlacademy.ru">
         <img class="publication__photo" src="img/photo-7.jpg" width="300" height="400" alt="Ваше фото">
         <div class="publication__filter-wrapper">
-          <button class="publication__filter publication__filter--crop publication__filter--active" type="button">
+          <button class="publication__filter publication__filter--crop publication__filter--active" type="button" aria-label="Кадр">
             <svg class="publication__filter-svg publication__filter-svg--active" width="44" height="44">
               <use xlink:href="#icon-crop"></use>
             </svg>
@@ -284,7 +288,7 @@
               <button class="publication__toggle publication__toggle--crop" type="button" aria-label="Уровень"></button>
             </div>
           </div>
-          <button class="publication__filter publication__filter--fill" type="button">
+          <button class="publication__filter publication__filter--fill" type="button" aria-label="Заливка">
             <svg class="publication__filter-svg" width="48" height="43">
               <use xlink:href="#icon-fill"></use>
             </svg>
@@ -295,7 +299,7 @@
               <button class="publication__toggle publication__toggle--fill" type="button" aria-label="Уровень"></button>
             </div>
           </div>
-          <button class="publication__filter publication__filter--contrast" type="button">
+          <button class="publication__filter publication__filter--contrast" type="button" aria-label="Контраст">
             <svg class="publication__filter-svg" width="32" height="32">
               <use xlink:href="#icon-contrast"></use>
             </svg>
@@ -320,7 +324,7 @@
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
       <h2 class="visually-hidden">Логотип приложения</h2>
-      <a class="page-footer__link logo-footer" href="index.html">
+      <a class="page-footer__link logo-footer" href="index.html" aria-label="На главную">
         <svg class="logo-footer__glasses-tablet" width="68" height="40">
           <use xlink:href="#logo-glasses-tablet"></use>
         </svg>
